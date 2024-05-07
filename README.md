@@ -1,5 +1,5 @@
 
-﻿## Project Description
+## Project Description
 
 The Join app is a progressive web application with a serverless backend,
 offering offline access to upcoming events in specific cities. Its responsive design
