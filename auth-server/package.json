@@ -1,0 +1,25 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://rweathers89.github.io/join/"
+  },
+  "keywords": [
+    "meet",
+    "app",
+    "google",
+    "calendar",
+    "api"
+  ],
+  "author": "rweathers89",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^110.0.0"
+  }
+}
