@@ -31,7 +31,7 @@ functions:
       handler: handler.getCalendarEvents
       events:
         - http:
-          path: api/get-events/{access_token}
+          path: auth-server-dev-getCalendarEvents/{access_token}
           method: get
 
 
