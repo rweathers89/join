@@ -10,7 +10,8 @@ const Event = ({ event }) => {
             <p>{event.created}</p>
             <p>{event.location}</p>
             <button className='showDetailsButton'
-                onClick={() => setShowDetails(!showDetails)}>
+                onClick={() => setShowDetails(!showDetails)}
+            >
                 {showDetails ? 'Hide Details' : 'Show Details'}
             </button>
             {showDetails ? (
