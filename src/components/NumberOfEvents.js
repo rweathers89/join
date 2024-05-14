@@ -8,7 +8,16 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
         const value = event.target.value;
         setCurrentNOE(value);
 
-        if (isNaN(value)) {
+        let infoText;
+        if (isNaN(value) || value <= 0) {
+            infoText = "Only positive numbers are allowed"
+        } else {
+            infoText = "";
+            setCurrentNOE(value);
+        }
+        setErrorAlert(infoText)
+
+        /*if (isNaN(value)) {
             setErrorAlert('value is not a number');
         } else if (value > 50) {
             setErrorAlert('maximum value is 50');
@@ -17,7 +26,7 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
         } else {
             setErrorAlert('');
             setCurrentNOE(value);
-        }
+        }*/
     };
 
 
