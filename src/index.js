@@ -6,13 +6,16 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
 import * as atatus from 'atatus-spa';
-atatus.config('dfc91d09cfec4289ac42fca6479ec72f', {
+/*atatus.config('dfc91d09cfec4289ac42fca6479ec72f', {
   whitelistUrls: [
     'https://rweathers89.github.io/join/',
     'ajax.googleapis.com'
     //'https://www.googleapis.com/auth/calendar.events.public.readonly'
   ]
 }).install();
+*/
+atatus.config('dfc91d09cfec4289ac42fca6479ec72f'
+).install();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
