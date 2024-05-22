@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
 body {
-  background-color: peachpuff;
+  background-color: 219,50,158;
 }
 
 .App {
@@ -11,6 +11,10 @@ body {
 
 .App * {
   box-sizing: border-box;
+}
+
+h1 {
+  color: 156,43,179;
 }
 
 ul {
@@ -54,7 +58,7 @@ input[type="number"] {
   align-self: center;
   margin: 0;
   font-size: 14px;
-  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px -12px black;
 }
 
 .suggestions > li {
@@ -77,7 +81,7 @@ input[type="number"] {
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1px solid rbg(41,34,200);
   border-radius: 4px;
   position: relative;
 }
@@ -90,7 +94,7 @@ input[type="number"] {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  background-color: rosybrown;
+  background-color: 85,33,203;
 }
 
 .alerts-container {
@@ -99,6 +103,19 @@ input[type="number"] {
   left: 20px;
   width: 250px;
   z-index: 1000;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px; 
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*
